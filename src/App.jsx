@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/navbar";
 import Home from "./pages/Home";
@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename="/Task28-ReactJS-Routing">
+    <HashRouter>
       <Navbar />
 
       <Routes>
@@ -19,7 +19,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
